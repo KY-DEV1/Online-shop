@@ -1,0 +1,408 @@
+/* Product Page Styles */
+#main {
+    padding: 40px 0;
+}
+
+#main-col {
+    float: left;
+    width: 65%;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+}
+
+.page-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.dark {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.pricing-plan {
+    flex-basis: 30%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pricing-plan.featured {
+    border: 2px solid #e8491d;
+    transform: scale(1.05);
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e8491d;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.features {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+}
+
+.feature-list i {
+    color: #e8491d;
+    margin-right: 10px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.faq-item h4 {
+    color: #e8491d;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 768px) {
+    #main-col, #sidebar {
+        float: none;
+        width: 100%;
+    }
+    
+    .pricing-table {
+        flex-direction: column;
+    }
+    
+    .pricing-plan {
+        margin-bottom: 20px;
+    }
+    
+    .pricing-plan.featured {
+        transform: none;
+    }
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button_1:hover {
+    background: #333;
+}
+
+/* Header */
+header {
+    background: #fff;
+    color: #333;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    display: inline;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hosting-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px 0;
+    color: #fff;
+    background: #333;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 38px;
+    width: 250px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 1.5%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#boxes .box i {
+    color: #e8491d;
+    margin-bottom: 15px;
+}
+
+#boxes .box h3 {
+    margin: 15px 0;
+}
+
+/* Features */
+#features {
+    padding: 40px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#features h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-item {
+    flex-basis: 23%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature-item i {
+    font-size: 40px;
+    color: #e8491d;
+    margin-bottom: 15px;
+}
+
+/* Contact */
+#contact {
+    padding: 40px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+#contact-form {
+    float: left;
+    width: 60%;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+.contact-info {
+    float: right;
+    width: 35%;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-info i {
+    color: #e8491d;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.social a:hover {
+    color: #e8491d;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    #contact-form,
+    .contact-info {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .feature-item {
+        flex-basis: 100%;
+    }
+}
