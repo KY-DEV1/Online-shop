@@ -62,7 +62,7 @@ function redirectToWhatsApp(event) {
     const message = document.getElementById('message').value;
     
     // Format nomor (pastikan tanpa +, 0, atau 62 ganda)
-    const formattedPhone = phone.replace(/^0/, '6283873991841').replace(/^\+/, '').replace(/\D/g, '');
+    const formattedPhone = phone.replace(/^0/, 'https://wa.me/message/KHOP7SITKIBTO1').replace(/^\+/, 'https://wa.me/message/KHOP7SITKIBTO1').replace(/\D/g, 'https://wa.me/message/KHOP7SITKIBTO1');
     
     // Format pesan
     const fullMessage = `Halo, saya ${name}%0A%0A${message}%0A%0A*Subjek:* ${subject || 'Tidak ada subjek'}`;
